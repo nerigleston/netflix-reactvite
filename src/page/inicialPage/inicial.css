@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 10px;
+  line-height: 1.2;
+  font-family:
+    Netflix Sans,
+    Helvetica Neue,
+    Segoe UI,
+    Roboto,
+    "Ubuntu",
+    sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  height: 68px;
+  align-items: center;
+  padding: 0 4%;
+}
+
+header a {
+  color: white;
+  transition: color 0.4s;
+}
+
+header a:hover {
+  color: gray;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.outros {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ff0000aa);
+}
+
+.logo img {
+  margin-right: 20px;
+}
+
+.logo a {
+  margin-right: 13px;
+}
+
+.outros img {
+  border-radius: 3px;
+  color: white;
+}
+
+body {
+  background-image: url("../../assets/img/hag-back.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 1%);
+  color: #fff;
+}
+
+.nomeRag {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4%;
+  color: white;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+
+.txt {
+  margin: 1vw 0;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.botao {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  padding: 0 4%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.botaoassistir {
+  background-color: white;
+  padding: 0.6rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.botaoassistir:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.botaoinfo:hover {
+  background-color: rgba(109, 109, 109, 0.336);
+}
+
+.botaoassistir a {
+  color: black;
+}
+
+.botaoinfo a {
+  color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.botaoinfo {
+  background-color: rgba(109, 109, 110, 0.7);
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+  transition: background-color 0.3s;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.seta {
+  border-color: #fff transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  height: 0;
+  width: 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.seta.virada {
+  transform: rotate(180deg);
+}
+
+.fose {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.fose:hover .seta {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.idade {
+  position: fixed;
+  top: 40rem;
+  right: 0rem;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.6);
+  border: 3px #dcdcdc;
+  border-left-style: solid;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 1.1vw;
+  height: 2vw;
+  padding: 0.5vw 3.5vw 0.5vw 0.8vw;
+}
+
+.repeat {
+  position: fixed;
+  top: 40rem;
+  right: 10rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: white;
+  border-radius: 50%;
+  padding: 0.8rem;
+  height: 16px;
+}
+
+.repeat:hover {
+  transition: background-color 0.3s;
+  background-color: rgba(109, 109, 109, 0.336);
+}
